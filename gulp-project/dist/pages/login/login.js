@@ -1,0 +1,1 @@
+require(["../../js/config"],function(){require(["jquery"],function(a){console.log(a.ajax)})});

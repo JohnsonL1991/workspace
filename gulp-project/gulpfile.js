@@ -40,12 +40,16 @@ gulp.task('refreshJS', function () {
 gulp.task('server', function () {
     connect.server({
         name: '',
-        root: ['dist'],
+        root: ['src'],
         port: 9999,
         livereload: true
     });
-    gulp.watch(['./src/**/*.html'], ['refreshHTML']);
-    gulp.watch(['./src/**/*.css'], ['refreshCSS', 'refreshHTML']);
-    gulp.watch(['./src/**/*.js'], ['refreshJS', 'refreshHTML']);
 
-})
+    // gulp.watch(['./src/**/*.html'], ['refreshHTML']);
+    // gulp.watch(['./src/**/*.css'], ['refreshCSS', 'refreshHTML']);
+    // gulp.watch(['./src/**/*.js'], ['refreshJS', 'refreshHTML']);
+
+});
+
+
+
