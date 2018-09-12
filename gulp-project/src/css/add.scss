@@ -1,0 +1,92 @@
+@import "functions";
+@import "mixins";
+// 定义变量 $name
+$size : 10px;
+
+html{
+    font-size: $size;
+}
+
+//变量拼接 #{变量名}
+$dir : top;
+div{
+    margin-#{$dir}: $size*2;
+    border-#{$dir}: $size - 9;
+    padding-#{$dir}: $size + 20px;
+}
+
+//数组
+$val : 100px;
+$arr : $val*0.5, $val*0.2, $val*0.1;
+p{
+    width:  nth($arr, 1);
+    height: nth($arr, 2);
+    border-width: nth($arr,3);
+}
+//定义map集合
+
+$map: (small: 20px,medium: 40px,large: 60px);
+
+@each $k,$v in $map{
+    .#{$k}{
+        font-size: $v;
+    }
+}
+
+p{
+    font-size: map-get($map, small);
+}
+span{
+    font-size: map-get($map, medium);
+}
+
+//继承
+
+%pos-type{
+    position: absolute;
+    width:200px;
+    height:50px;
+}
+
+.abw{
+   @extend %pos-type;
+   background: white(60);
+}
+.abb{
+    @extend %pos-type;
+    background: black(40);
+
+   
+}
+.box{
+    @include opacity(50);
+}
+html{
+    width:100%;
+    height:100%;
+
+    body{
+        width:1200px;
+        margin: 0 auto;
+        #box{
+            width: 100%;
+            height: 500px;
+            position: relative;
+            div{
+                @extend %pos-type;
+                @include opacity(80);
+                a{
+                    @extend %pos-type;
+                    @include opacity(90);
+
+                    & :hover{
+                        background: black(70);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
