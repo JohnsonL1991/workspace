@@ -1,1 +1,1 @@
-require(["../../js/config"],function(){require(["jquery"],function(a){console.log(a.ajax)})});
+require(["../../js/config"],function(){require(["jquery","hover"],function(a){console.log(a.ajax),console.log(a.prototype.hoverdir),console.log(a.HoverDir)})}),require(["../../require.js"],function(){require(["jquery","waves"],function(a,b){console.log(a.ajax),console.log(b)})}),require(["jquery"],function(){define(["jquery"],function(){return"xx"})});

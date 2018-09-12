@@ -1,0 +1,61 @@
+html {
+  font-size: 10px; }
+
+div {
+  margin-top: 20px;
+  border-top: 1px;
+  padding-top: 30px; }
+
+p {
+  width: 50px;
+  height: 20px;
+  border-width: 10px; }
+
+.small {
+  font-size: 20px; }
+
+.medium {
+  font-size: 40px; }
+
+.large {
+  font-size: 60px; }
+
+p {
+  font-size: 20px; }
+
+span {
+  font-size: 40px; }
+
+.abw, .abb, html body #box div, html body #box div a {
+  position: absolute;
+  width: 200px;
+  height: 50px; }
+
+.abw {
+  background: rgba(255, 255, 255, 0.6); }
+
+.abb {
+  background: rgba(0, 0, 0, 0.4); }
+
+.box {
+  opacity: 0.5;
+  filter: alpha(opacity=50); }
+
+html {
+  width: 100%;
+  height: 100%; }
+  html body {
+    width: 1200px;
+    margin: 0 auto; }
+    html body #box {
+      width: 100%;
+      height: 500px;
+      position: relative; }
+      html body #box div {
+        opacity: 0.8;
+        filter: alpha(opacity=80); }
+        html body #box div a {
+          opacity: 0.9;
+          filter: alpha(opacity=90); }
+          html body #box div a :hover {
+            background: rgba(0, 0, 0, 0.7); }
