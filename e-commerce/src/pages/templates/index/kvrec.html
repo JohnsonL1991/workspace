@@ -1,0 +1,19 @@
+<script id="kvrec" type="text/html">
+    <%for(var i = 0; i < list.length; i++){%>
+        <%if(i == 2){%>
+            <a class="rec_item" href="<%=list[i][0].t%>" target="_blank">
+                
+                <img src="<%=list[i][0].img%>">
+                    
+            </a>
+        <%}else{%>
+            <a class="rec_item" href="<%=list[i].t%>" target="_blank">
+            
+                <img src="<%=list[i].img%>">
+                    
+            </a>
+        <%}%>
+        
+    <%}%>
+    
+</script>

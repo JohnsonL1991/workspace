@@ -1,0 +1,28 @@
+<script id="youlike" type="text/html">
+    
+    <% for(var i = 0; i < list.length; i++){ %>
+        <li>
+
+            <a href="//item.yhd.com/<%=list[i].spu%>.html">
+                <div class="img_wrap">
+                    <img src="<%=list[i].img%>" alt="">
+                </div>
+                <div class="info_wrap">
+                   <%=list[i].t%>
+                   <div class="price_wrap">
+                        ￥<%=list[i].jp%>
+                        <div class="price_detail">
+                            查看详情
+                        </div>
+                        
+                    </div>
+                </div>
+                
+
+            </a>
+
+        </li>
+    <% } %>
+
+    
+</script>

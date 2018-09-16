@@ -1,0 +1,111 @@
+@mixin opacity($val){
+    opacity: $val/100;
+    filter: alpha(opacity=$val);
+}
+
+@mixin clearfix{
+    &::after{
+        content: "";
+        display: block;
+        font-size:0;
+        height:0;
+        overflow: hidden;
+        clear: both;
+    }
+}
+
+//三角形制作
+
+@mixin triangle($dir: bottom, $width:10px,$color:black){
+    width:0;
+    height:0;
+    border-style:solid;
+    border-width:$width;
+    @if $dir==bottom{
+        border-color: $color transparent transparent transparent;
+    }
+    @if $dir==top{
+        border-color: transparent transparent $color transparent;
+    }
+    @if $dir==left{
+        border-color: transparent $color transparent transparent;
+    }
+    @if $dir==right{
+        border-color:transparent transparent transparent $color;
+    }
+
+}
+
+
+
+
+//圆角边框
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+
+
+
+@mixin clearfix(){
+    &::after{
+        content: '';
+        display: block;
+        clear:both;
+
+    }
+}
+
+
+
+@mixin transition($duration: 0.2s, $mw: linear){
+    -webkit-transition: -webkit-transform $duration $mw;
+    transition: -webkit-transform $duration $mw;
+    -o-transition: -o-transform $duration $mw;
+    -moz-transition: transform $duration $mw,-moz-transform $duration $mw;
+    transition: transform $duration $mw;
+    transition: transform $duration $mw,-webkit-transform $duration $mw,-moz-transform $duration $mw,-o-transform $duration $mw;
+}
+
+@mixin transitionAll($item,$duration,$style){
+    -webkit-transition: $item $duration $style;
+    transition: $item $duration $style;
+    -o-transition: $item $duration $style;
+    -moz-transition: $item $duration $style;
+    transition: $item $duration $style
+}
+@mixin rotate($duration: 0.2s, $mw: linear){
+    
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+    
+}
+
+@mixin translateX($percent: 50%){
+    -webkit-transform: translateX($percent);
+    -o-transform: translateX($percent);
+    -moz-transform: translateX($percent);
+    -ms-transform: translateX($percent);
+    transform: translateX($percent);
+}
+@mixin translateXY($left: 50%,$right: 50%){
+    -webkit-transform: translate($left,$right);
+    -o-transform: translate($left,$right);
+    -moz-transform: translate($left,$right);
+    -ms-transform: translate($left,$right);
+    transform: translate($left,$right);
+}
+
+@mixin scale($num){
+    -webkit-transform: scale($num);
+    -o-transform: scale($num);
+    -moz-transform: scale($num);
+    -ms-transform: scale($num);
+    transform: scale($num);
+}

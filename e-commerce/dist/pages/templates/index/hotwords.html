@@ -1,0 +1,11 @@
+<script id="hotwords" type="text/html">
+    <ul>
+        <%for(var i = 1 ; i < list.length; i++){%>
+            <%if( list[i].u && list[i].c == ''){%>
+                <li><a target="_blank" href="<%= list[i].u %>"><%= list[i].n %></a></li>
+            <%}%>
+        <%}%>
+            
+        </ul>
+
+</script>

@@ -1,0 +1,47 @@
+{
+    "status": "1",
+    "data": {
+        "GENERAL_GLOBAL_LJDCRK_KT": [
+            {
+                "advSourceId": 47550709,
+                "advSourceType": 2,
+                "advType": 9,
+                "advertiseClassificationCode": "GENERAL_GLOBAL_LJDCRK",
+                "advertisePageCode": "GENERAL",
+                "advertisePositionCode": "GENERAL_GLOBAL",
+                "advertiseRegionalCode": "GENERAL_GLOBAL_LJDCRK_KT",
+                "advertiseRegionalId": 19668,
+                "brandId": 0,
+                "classWeight": 0,
+                "code": "GENERAL_GLOBAL_LJDCRK_KT",
+                "displayContent": "1号店月饼超级品类日",
+                "displayTitle": "1号店月饼超级品类日",
+                "endTime": 1536854399000,
+                "extTrackUrl": "",
+                "id": 47550709,
+                "imageUrl": "//img30.360buyimg.com/img/jfs/t1/5479/26/2821/5167/5b9789d8E8540b885/262b1fa3116c6982.jpg",
+                "imageUrlWide": "//img30.360buyimg.com/img/jfs/t1/5479/26/2821/5167/5b9789d8E8540b885/262b1fa3116c6982.jpg",
+                "imgTitle": "1号店月饼超级品类日",
+                "imgUrl": "//img30.360buyimg.com/img/jfs/t1/5479/26/2821/5167/5b9789d8E8540b885/262b1fa3116c6982.jpg",
+                "imgWideUrl": "//img30.360buyimg.com/img/jfs/t1/5479/26/2821/5167/5b9789d8E8540b885/262b1fa3116c6982.jpg",
+                "index": 1,
+                "isAjax": 0,
+                "linkUrl": "https://sale.yhd.com/act/qlier0EyStHVXcT6.html",
+                "mcSiteId": 1,
+                "mergeWeight": 0,
+                "name": "1号店月饼超级品类日",
+                "note": "",
+                "perTracker": "19668_47550709_1",
+                "pmId": 0,
+                "productId": 0,
+                "recordTracker": 0,
+                "reserved": "",
+                "startTime": 1536681600000,
+                "style": 0,
+                "tc": "ad.0.0.19668-47550709.1.1",
+                "text": "1号店月饼超级品类日",
+                "topicId": 0
+            }
+        ]
+    }
+}

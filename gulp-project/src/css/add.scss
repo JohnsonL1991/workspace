@@ -61,6 +61,20 @@ span{
 .box{
     @include opacity(50);
 }
+
+%ani-type{
+    position: absolute;
+    @include opacity(60);
+}
+
+
+@mixin tringle($dir: top, $color: #000, $width: 10px){
+    @if $dir == top{
+        border-color: transparent transparent $color transparent;
+    }
+}
+
+
 html{
     width:100%;
     height:100%;
@@ -69,6 +83,7 @@ html{
         width:1200px;
         margin: 0 auto;
         #box{
+            @extend %ani-type;
             width: 100%;
             height: 500px;
             position: relative;

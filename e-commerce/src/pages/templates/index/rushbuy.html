@@ -1,0 +1,34 @@
+<script id="rushbuy" type="text/html">
+    <%for(var i = 0; i < list.length; i++){%>
+        <div class="swiper-slide">
+        <a target="_blank" href="https://miaosha.jd.com/#<%=list[i].wareId%>">
+            <div class="rb_pro">
+                <div class="rb_pro_name">
+                    <%=list[i].wname%>
+                </div>
+                <div class="rb_pro_price">
+                    ￥<span><%= list[i].miaoShaPrice%></span>
+                </div>
+                <div class="rb_pro_oriprice">
+                    参考价： <span>￥<%= list[i].jdPrice%></span>
+
+                </div>
+            </div>
+            <div class="rb_pro_img">
+                <img src="<%=list[i].imageurl%>"
+                    alt="<%=list[i].wname%>" class="pro_pic">
+            </div>
+            <div class="rb_pro_saled">
+                <div>折扣</div>
+                <div>
+
+                        <%= list[i].discount %>
+                    
+                </div>
+            </div>
+        </a>
+    </div>
+    
+    <%}%>
+    
+</script>

@@ -2,3 +2,83 @@
     opacity: $val/100;
     filter: alpha(opacity=$val);
 }
+
+@mixin clearfix{
+    &::after{
+        content: "";
+        display: block;
+        font-size:0;
+        height:0;
+        overflow: hidden;
+        clear: both;
+    }
+}
+
+//三角形制作
+
+@mixin tringle($dir: bottom, $width:10px,$color:black){
+    width:0;
+    height:0;
+    border-style:solid;
+    border-width:$width;
+    @if $dir==bottom{
+        border-color: $color transparent transparent transparent;
+    }
+    @if $dir==top{
+        border-color: transparent transparent $color transparent;
+    }
+    @if $dir==left{
+        border-color: transparent $color transparent transparent;
+    }
+    @if $dir==right{
+        border-color:transparent transparent transparent $color;
+    }
+
+}
+
+
+
+
+//圆角边框
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+// .box {
+//     @include border-radius(10px);
+// }
+
+//跨浏览器透明度设置
+
+@mixin opacity($opacity) {
+    opacity: $opacity/100;
+   
+    filter: alpha(opacity=$opacity); //IE8
+}
+
+// .faded-text {
+//     @include opacity(0.8);
+// }
+
+
+
+
+
+
+@mixin clearfix(){
+    &::after{
+        content: '';
+        display: block;
+        clear:both;
+
+    }
+}
+
+@mixin triangle($dir: top,$width:10px,$color:#000){
+    @if $dir == top{
+        
+    }
+}

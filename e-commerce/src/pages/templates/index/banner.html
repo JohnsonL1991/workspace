@@ -1,0 +1,32 @@
+<script id="banner" type="text/html">
+    <div class="kv_banner_wrapper">
+        <% for(var i = 0; i < list.length; i++){ %>
+            
+            <div class="kv_banner_slide">
+                <a target="_blank" href="<%= list[i][0].href%>">
+                    <img src="<%= list[i][0].src%>" alt="">
+                </a>
+            </div>
+        <% } %>
+        
+
+    </div>
+    <div class="kv_banner_pagination">
+
+        <% for(var i = 0; i < list.length; i++){ %>
+        
+            <div class="kv_banner_pagination_item">
+                    <i></i>
+                </div>
+        <% } %>
+        
+        
+
+    </div>
+    <div class="kv_banner_prev_btn">
+
+    </div>
+    <div class="kv_banner_next_btn">
+
+    </div>
+</script>
